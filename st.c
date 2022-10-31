@@ -35,7 +35,7 @@
 #define ESC_ARG_SIZ   16
 #define STR_BUF_SIZ   ESC_BUF_SIZ
 #define STR_ARG_SIZ   ESC_ARG_SIZ
-#define HISTSIZE      2000
+#define HISTSIZE      20000
 
 /* macros */
 #define IS_SET(flag)		((term.mode & (flag)) != 0)
@@ -1070,7 +1070,7 @@ kscrolldown(const Arg* a)
 	int n = a->i;
 
 	if (n < 0)
-		n = term.row + n;
+		n = (term.row + n) / 2;
 
 	if (n > term.scr)
 		n = term.scr;
@@ -1088,7 +1088,7 @@ kscrollup(const Arg* a)
 	int n = a->i;
 
 	if (n < 0)
-		n = term.row + n;
+		n = (term.row + n) / 2;
 
 	if (term.scr <= HISTSIZE-n) {
 		term.scr += n;
