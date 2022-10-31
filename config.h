@@ -96,25 +96,25 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  /* 8 normal colors */
-  [0] = "#1c1c1c", /* black   */
-  [1] = "#ff005b", /* red     */
-  [2] = "#cee318", /* green   */
-  [3] = "#ffe755", /* yellow  */
-  [4] = "#048ac7", /* blue    */
-  [5] = "#833c9f", /* magenta */
-  [6] = "#0ac1cd", /* cyan    */
-  [7] = "#e5e5e5", /* white   */
+    /* 8 normal colors */
+    "#1c1c1c", /* black   */
+    "#ff005b", /* red     */
+    "#cee318", /* green   */
+    "#ffe755", /* yellow  */
+    "#048ac7", /* blue    */
+    "#833c9f", /* magenta */
+    "#0ac1cd", /* cyan    */
+    "#e5e5e5", /* white   */
 
-  /* 8 bright colors */
-  [8]  = "#666666", /* black   */
-  [9]  = "#ff00a0", /* red     */
-  [10] = "#ccff00", /* green   */
-  [11] = "#ff9f00", /* yellow  */
-  [12] = "#48c6ff", /* blue    */
-  [13] = "#be67e1", /* magenta */
-  [14] = "#63e7f0", /* cyan    */
-  [15] = "#f3f3f3", /* white   */
+    /* 8 bright colors */
+    "#666666", /* black   */
+    "#ff00a0", /* red     */
+    "#ccff00", /* green   */
+    "#ff9f00", /* yellow  */
+    "#48c6ff", /* blue    */
+    "#be67e1", /* magenta */
+    "#63e7f0", /* cyan    */
+    "#f3f3f3", /* white   */
 
     [255] = 0,
 
@@ -202,6 +202,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 };
 
 /*
