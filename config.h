@@ -96,33 +96,33 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    /* 8 normal colors */
-    "#1c1c1c", /* black   */
-    "#ff005b", /* red     */
-    "#cee318", /* green   */
-    "#ffe755", /* yellow  */
-    "#048ac7", /* blue    */
-    "#833c9f", /* magenta */
-    "#0ac1cd", /* cyan    */
-    "#e5e5e5", /* white   */
+	/* 8 normal colors */
+	"#1c1c1c", /* black   */
+	"#ff005b", /* red     */
+	"#cee318", /* green   */
+	"#ffe755", /* yellow  */
+	"#048ac7", /* blue    */
+	"#833c9f", /* magenta */
+	"#0ac1cd", /* cyan    */
+	"#e5e5e5", /* white   */
 
-    /* 8 bright colors */
-    "#666666", /* black   */
-    "#ff00a0", /* red     */
-    "#ccff00", /* green   */
-    "#ff9f00", /* yellow  */
-    "#48c6ff", /* blue    */
-    "#be67e1", /* magenta */
-    "#63e7f0", /* cyan    */
-    "#f3f3f3", /* white   */
+	/* 8 bright colors */
+	"#666666", /* black   */
+	"#ff00a0", /* red     */
+	"#ccff00", /* green   */
+	"#ff9f00", /* yellow  */
+	"#48c6ff", /* blue    */
+	"#be67e1", /* magenta */
+	"#63e7f0", /* cyan    */
+	"#f3f3f3", /* white   */
 
-    [255] = 0,
+	[255] = 0,
 
-    /* more colors can be added after 255 to use with DefaultXX */
-    "#c5c5c5", /* 256 -> cursor */
-    "#555555", /* 257 -> rev cursor*/
-    "#c5c5c5", /* 258 -> fg */
-    "#1c1c1c", /* 259 -> bg */
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#c5c5c5", /* 256 -> cursor */
+	"#555555", /* 257 -> rev cursor*/
+	"#c5c5c5", /* 258 -> fg */
+	"#1c1c1c", /* 259 -> bg */
 };
 
 
