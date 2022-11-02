@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+// static char *font = "Liberation Mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "CaskaydiaCove Nerd Font:pixelsize=20:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -96,32 +97,32 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#1c1c1c", /* black   */
+	"#ff005b", /* red     */
+	"#cee318", /* green   */
+	"#ffe755", /* yellow  */
+	"#048ac7", /* blue    */
+	"#833c9f", /* magenta */
+	"#0ac1cd", /* cyan    */
+	"#e5e5e5", /* white   */
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#666666", /* black   */
+	"#ff00a0", /* red     */
+	"#ccff00", /* green   */
+	"#ff9f00", /* yellow  */
+	"#48c6ff", /* blue    */
+	"#be67e1", /* magenta */
+	"#63e7f0", /* cyan    */
+	"#f3f3f3", /* white   */
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"gray90", /* default foreground colour */
-	"black", /* default background colour */
+	"#c5c5c5", /* 256 -> cursor */
+	"#555555", /* 257 -> rev cursor*/
+	"#c5c5c5", /* 258 -> fg */
+	"#1c1c1c", /* 259 -> bg */
 };
 
 
@@ -147,8 +148,8 @@ static unsigned int cursorshape = 2;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 160;
+static unsigned int rows = 40;
 
 /*
  * Default colour and shape of the mouse cursor
